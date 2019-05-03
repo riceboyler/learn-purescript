@@ -1,30 +1,26 @@
-# PureScript 0.12.0 Hello World
+# Learn PureScript (0.12)
 
-[![Build Status](https://travis-ci.org/justinwoo/purescript-0.12.0-hello-world.png)](https://travis-ci.org/justinwoo/purescript-0.12.0-hello-world)
+Basic starter kit for learning PureScript.
 
-You can get started with PureScript 0.12.0 easily by using this repo.
+## Quickstart
 
-If you have everything installed, you should be able to follow this:
+### Install
 
 ```
-> psc-package install
-Installing 3 packages...
-...
-Install complete
-> pulp run
-* Building project in /home/justin/Code/purescript-0.12.0-hello-world
-...
-* Build successful.
-look, show on Record:
-{ apple: "banana" }
+npm install
+npm run setup
 ```
 
-## FAQs
+### Run
 
-## Installation
+```
+npm start
+```
 
-Please see the installation page in <https://purescript-resources.readthedocs.io/en/latest/installation.html>
+## Acknowledgements
 
-### Do I need Bower?
+This project is originally based on [@justinwoo]’s [purescript-0.12.0-hello-world].
 
-No, unless you know exactly what you might use Bower for, you do not need it at all. You should be using Psc-Package like this repo does.
+
+[@justinwoo]: https://github.com/justinwoo
+[purescript-0.12.0-hello-world]: https://github.com/justinwoo/purescript-0.12.0-hello-world
