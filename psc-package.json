@@ -4,6 +4,9 @@
   "source": "https://github.com/purescript/package-sets.git",
   "depends": [
     "console",
+    "globals",
+    "integers",
+    "node-process",
     "prelude"
   ]
 }

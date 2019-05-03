@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf .psc-package .pulp-cache node_modules output",
     "setup": "npx psc-package install",
-    "start": "npx pulp build && npx pulp run",
+    "start": "npx pulp build && npx pulp run --",
     "test": "npx pulp test"
   },
   "repository": {
