@@ -13,7 +13,11 @@ npm install
 ### Run
 
 ```
+# run all exercises
 npm start
+
+# run specific exercise
+npm start <exercise>
 ```
 
 ## Acknowledgements
