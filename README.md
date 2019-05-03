@@ -20,6 +20,11 @@ npm start
 npm start <exercise>
 ```
 
+### Add new dependency
+
+To add a new dependency, add its name to `psc-package.json` `depends` list
+and run `npm install`.
+
 ## Acknowledgements
 
 This project is originally based on [@justinwoo]’s [purescript-0.12.0-hello-world].
