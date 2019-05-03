@@ -8,7 +8,6 @@ Basic starter kit for learning PureScript.
 
 ```
 npm install
-npm run setup
 ```
 
 ### Run
