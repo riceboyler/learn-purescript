@@ -1,11 +1,12 @@
 module Internal.Runner
   ( main
 
-  , runJavaScript
-  , runPureScript
+  , assertEqual
+  , module Exported
   ) where
 
 import Prelude
+import Prelude as Exported
 
 import Data.Array (drop, length, mapWithIndex, (!!))
 import Data.Either (Either(..))
@@ -14,20 +15,24 @@ import Data.Int as Int
 import Data.Maybe (Maybe(..))
 import Data.String (joinWith)
 import Effect (Effect)
+import Effect (Effect) as Exported
 import Effect.Console (log)
 import Node.Process as Process
+import Test.QuickCheck (Result, (<?>))
+import Test.QuickCheck (quickCheck) as Exported
 
 ---
 
-runSingle :: forall a. Show a => String -> a -> Effect Unit
-runSingle label output = do
-  log $ "========> " <> label <> ": " <> show output
+assertEqual :: forall a b. Eq a => Show a => Show b => a -> a -> b -> Result
+assertEqual expected actual input =
+  actual == expected <?>
+    "--------------------------------------------------------------------------------" <>
+    "\nInput:                 " <> show input <>
+    "\nActual (PureScript):   " <> show actual <>
+    "\nExpected (JavaScript): " <> show expected <>
+    "\n--------------------------------------------------------------------------------"
 
-runJavaScript :: forall a. Show a => a -> Effect Unit
-runJavaScript = runSingle "JavaScript"
-
-runPureScript :: forall a. Show a => a -> Effect Unit
-runPureScript = runSingle "PureScript"
+infix 2 assertEqual as ===
 
 ---
 

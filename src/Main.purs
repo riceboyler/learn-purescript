@@ -5,7 +5,7 @@ import Prelude
 import Effect (Effect)
 import Internal.Runner as Runner
 
-import Exercise1 as Exercise1
+import Exercises.Exercise1.PureScript as Exercise1
 import Exercise2 as Exercise2
 
 
