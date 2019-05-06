@@ -11,7 +11,9 @@
     "integers",
     "maybe",
     "node-process",
+    "nullable",
     "prelude",
+    "quickcheck",
     "strings"
   ]
 }
