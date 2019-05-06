@@ -2,8 +2,9 @@ module Exercises.Exercise2.PureScript where
 
 import Internal
 
-import Data.Maybe (Maybe(..))
+import Data.Maybe (Maybe)
 import Exercises.Exercise2.JavaScript as JavaScript
+
 
 add2 :: Int -> Int
 add2 number = number + 2

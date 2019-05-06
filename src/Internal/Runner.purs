@@ -24,7 +24,7 @@ import Test.QuickCheck (quickCheck) as Exported
 ---
 
 assertEqual :: forall a b. Eq a => Show a => Show b => a -> a -> b -> Result
-assertEqual expected actual input =
+assertEqual actual expected input =
   actual == expected <?>
     "--------------------------------------------------------------------------------" <>
     "\nInput:                 " <> show input <>

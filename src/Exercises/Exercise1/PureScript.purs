@@ -5,6 +5,13 @@ import Internal
 import Data.Maybe (Maybe(..))
 import Exercises.Exercise1.JavaScript as JavaScript
 
+-- data Maybe a = Nothing | Just a
+--      ^^^^^
+--      type name
+--                ^^^^^^^^
+--                first constructor
+--                          ^^^^^^^^
+--                          second constructor
 
 -- TODO: Implement `add2` to do the same as the JavaScript implementation
 -- in `JavaScript.js` file:
