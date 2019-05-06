@@ -44,7 +44,8 @@ main :: Array (Effect Unit) -> Effect Unit
 main allExercises = do
   args <- Process.argv
   let exercise = case args of
-                    [_, _, ex] ->
+                    -- HACK: Ignoring `--stash --censor-codes=ImplicitQualifiedImportReExport --`:
+                    [_, _, _, _, ex] ->
                       case Int.fromString ex of
                         Just i | i >= 1 && i <= length allExercises ->
                           Right $ Specific i
