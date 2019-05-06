@@ -1,3 +1,4 @@
+# PureScript
 /bower_components/
 /node_modules/
 /.pulp-cache/
@@ -7,3 +8,6 @@
 /.psc*
 /.purs*
 /.psa*
+
+# macOS
+.DS_Store
