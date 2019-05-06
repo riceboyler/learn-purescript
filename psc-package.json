@@ -5,6 +5,7 @@
   "depends": [
     "arrays",
     "console",
+    "debug",
     "foldable-traversable",
     "formatters",
     "globals",
