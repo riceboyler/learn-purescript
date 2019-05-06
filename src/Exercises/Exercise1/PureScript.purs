@@ -1,17 +1,16 @@
 module Exercises.Exercise1.PureScript where
 
 import Internal
-import Exercises.Exercise1.JavaScript as JavaScript
 
--- TODO: Add imports required (if any) for exercise here:
 import Data.Maybe (Maybe(..))
+import Exercises.Exercise1.JavaScript as JavaScript
 
 
 -- TODO: Implement `add2` to do the same as the JavaScript implementation
 -- in `JavaScript.js` file:
 add2 :: Maybe Int -> Maybe Int
-add2 _ = Nothing
-
+add2 (Just number) = Just (number + 2)
+add2 Nothing = Nothing
 
 main :: Effect Unit
 main = quickCheck \n ->
